@@ -1,0 +1,35 @@
+@import 'utility.less';
+
+@component-margin:20px;
+@article-width:900px;
+@half-width-component:@article-width / 2 - @component-margin;
+
+.Component {
+  box-sizing:border-box;
+  background-color:#e6e6e6;
+  min-height: 1px;
+  padding: @component-margin;
+
+  h1 {
+    margin-top:0;
+  }
+
+  &.left {
+    float:left;
+    width:@half-width-component;
+    margin-right:@component-margin;
+  }
+
+  &.right {
+    float:right;
+    width:@half-width-component;
+    margin-left:@component-margin;
+
+  }
+
+  &.full {
+    float:left;
+    width:100%;
+  }
+
+}
